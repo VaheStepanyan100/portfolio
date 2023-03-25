@@ -42,12 +42,13 @@
   color: #344563;
 }
 
-.contactTitle {
+.contactTitle > a {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   margin-right: 205px;
+  text-decoration: none;
 }
 
 .connect {
