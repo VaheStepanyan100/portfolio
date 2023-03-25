@@ -1,0 +1,12 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #6070ff;
+}
