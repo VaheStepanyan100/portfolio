@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-.main {
+.intro {
   padding-top: 120px;
   display: flex;
   flex-direction: column;
@@ -27,14 +27,14 @@
   background-size: cover;
 }
 
-.main > h1 {
+.intro > h1 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
 }
 
-.main > p {
+.intro > p {
   width: 327px;
   font-weight: 400;
   font-size: 16px;
@@ -50,18 +50,25 @@
   margin-right: 205px;
 }
 
-.main > ul {
+.connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect > ul {
   list-style: none;
   display: flex;
   margin-right: 220px;
 }
 
-.main > ul > li {
+.connect > ul > li {
   padding: 6px;
   margin-top: -16px;
 }
 
-.main > ul > li,
+.connect > ul > li,
 .hamburgerIcon > img {
   cursor: pointer;
 }
