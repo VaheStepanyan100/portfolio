@@ -5,8 +5,62 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   color: #6070ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.main {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/header-shapes mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main > h1 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.main > p {
+  width: 327px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.contactTitle {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 205px;
+}
+
+.main > ul {
+  list-style: none;
+  display: flex;
+  margin-right: 220px;
+}
+
+.main > ul > li {
+  padding: 6px;
+  margin-top: -16px;
+}
+
+.main > ul > li,
+.hamburgerIcon > img {
+  cursor: pointer;
 }
