@@ -112,6 +112,20 @@ body {
   line-height: 16px;
 }
 
+.work-lang > li {
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.languages > li {
+  background-color: #f7f7f9;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 12px;
+}
+
 .skill-info > li:not(:first-child) {
   color: #7a869a;
 }
@@ -129,12 +143,6 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
-}
-
-.work-lang > li {
-  background-color: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
 }
 
 .work > button {
@@ -191,9 +199,8 @@ body {
 }
 
 .about-section .lets-connect {
-  margin-top: 12px;
   padding: 0;
-  margin: 0;
+  margin: 12 0 0 0;
   list-style: none;
   display: flex;
   gap: 16px;
@@ -241,14 +248,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.languages > li {
-  background-color: #f7f7f9;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 9px 12px;
 }
 
 .frame-title {
