@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f7f7f9;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -76,7 +80,6 @@
 }
 
 .works-section {
-  background-color: #f7f7f9;
   display: grid;
   justify-content: center;
   align-items: center;
