@@ -247,6 +247,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 9px 12px;
 }
 
 .frame-title {
