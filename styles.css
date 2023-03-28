@@ -84,16 +84,6 @@
   margin-top: 114px;
 }
 
-/* .work {
-  width: 327px;
-  height: 578px;
-  margin-left: 24px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  padding: 16px;
-  gap: 12px;
-} */
-
 .work {
   display: flex;
   background-color: white;
