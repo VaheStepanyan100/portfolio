@@ -191,6 +191,7 @@ body {
 }
 
 .about-section .lets-connect {
+  margin-top: 12px;
   padding: 0;
   margin: 0;
   list-style: none;
