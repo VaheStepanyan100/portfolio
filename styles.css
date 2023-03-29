@@ -326,6 +326,10 @@ textarea {
   height: 48px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 20px;
+  color: grey;
 }
 
 textarea {
@@ -349,6 +353,7 @@ input::placeholder {
 }
 
 input[type="submit"] {
+  padding: 0;
   width: 142px;
   height: 48px;
   background-color: #fff;
