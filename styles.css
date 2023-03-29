@@ -285,15 +285,10 @@ body {
   border-top-left-radius: 80px;
   display: flex;
   flex-direction: column;
-  margin-top: 110px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 57px;
+  margin-top: 110px;
 }
 
 .contact-me {
