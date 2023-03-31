@@ -191,6 +191,7 @@ body {
   padding: 24px;
   border-top-right-radius: 80px;
   padding-top: 90px;
+  padding-bottom: 140px;
 }
 
 .about-section h2 {
@@ -289,7 +290,7 @@ body {
   background-image: url("assets/contact form shapes-mobile.svg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: cover;
+  background-size: contain;
   background-color: #6070ff;
   border-top-left-radius: 80px;
   display: flex;
@@ -297,7 +298,6 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 57px;
-  margin-top: 110px;
 }
 
 .contact-me {
@@ -427,5 +427,9 @@ input[type="submit"]:hover {
   .work > img {
     width: 544px;
     height: 448px;
+  }
+
+  .contact-form {
+    background-image: url("assets/contact form background shapes.svg");
   }
 }
