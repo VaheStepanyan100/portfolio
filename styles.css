@@ -181,12 +181,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 28px;
 }
 
 .about-section article {
   background-color: white;
-  width: 375px;
   margin-top: 96px;
   padding: 24px;
   border-top-right-radius: 80px;
@@ -263,15 +261,15 @@ body {
 .frame-title {
   margin: 40px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 200px;
 }
 
 .skill-title {
   margin: 40px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 271px;
 }
 
 .frame-title > span {
@@ -427,6 +425,47 @@ input[type="submit"]:hover {
   .work > img {
     width: 544px;
     height: 448px;
+  }
+
+  .about-article {
+    display: flex;
+    gap: 38px;
+  }
+
+  .about-myself {
+    margin-left: 50px;
+  }
+
+  .about-myself p {
+    display: inline;
+    max-width: 211px;
+  }
+
+  .all-skills {
+    margin-right: 110px;
+  }
+
+  hr,
+  .frame-title > img,
+  .skill-title > img,
+  .lang-title > img {
+    margin-right: -60px;
+  }
+
+  .languages {
+    flex-direction: row;
+  }
+
+  .languages > li {
+    flex-direction: column;
+    gap: 12px;
+    width: 122px;
+    height: 120px;
+  }
+
+  .languages > li > img,
+  span {
+    align-self: flex-start;
   }
 
   .contact-form {
