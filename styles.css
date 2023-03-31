@@ -384,7 +384,27 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px) {
   .header {
-    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+
+  .menu-list-items > ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+
+  .menu-list-items a {
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .menu-list-items a:hover {
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    text-decoration-thickness: 2px;
   }
 
   .intro {
