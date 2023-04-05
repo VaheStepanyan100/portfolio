@@ -177,6 +177,11 @@ body {
   color: white;
 }
 
+.work button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
 .about-section {
   display: flex;
   justify-content: center;
