@@ -496,4 +496,13 @@ input[type="submit"]:hover {
   .formInputItems textarea {
     width: 447px;
   }
+
+  .formInputItems input[type="submit"] {
+    margin-left: 150px;
+  }
+
+  .formInputItems input[type="submit"]:active {
+    background-color: #2230d2;
+    color: white;
+  }
 }
