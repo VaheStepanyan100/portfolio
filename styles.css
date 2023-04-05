@@ -38,6 +38,16 @@ body {
   text-decoration: none;
 }
 
+.rotate {
+  animation: rotate 1s ease;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .menu-list-items > ul {
   display: none;
 }
@@ -349,12 +359,22 @@ textarea::placeholder {
   padding-left: 16px;
 }
 
+textarea:hover::placeholder {
+  transform: translate(2px);
+}
+
 input::placeholder {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
   padding-left: 16px;
+}
+
+input[type="text"]:hover::placeholder,
+input[type="email"]:hover::placeholder {
+  transform: translate(2px);
+  color: #b3bac5;
 }
 
 input[type="submit"] {
@@ -505,4 +525,9 @@ input[type="submit"]:hover {
     background-color: #2230d2;
     color: white;
   }
+}
+
+.scale:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
