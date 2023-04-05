@@ -14,6 +14,15 @@ body {
   background-color: #fff;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
 .header-nav {
   padding: 20px;
   display: flex;
@@ -35,8 +44,6 @@ body {
 
 .intro {
   padding: 70px 0;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 80px;
@@ -71,15 +78,12 @@ body {
 }
 
 .connect {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .connect-ul {
   list-style: none;
-  display: flex;
   margin-right: 220px;
 }
 
@@ -102,9 +106,7 @@ body {
 }
 
 .work {
-  display: flex;
   background-color: white;
-  flex-direction: column;
   border: 1px solid #dfe1e6;
   padding: 24px;
   border-radius: 16px;
@@ -118,7 +120,6 @@ body {
 .work ul {
   margin: 0;
   padding: 0;
-  display: flex;
   gap: 12px;
   list-style: none;
   font-weight: 600;
@@ -184,7 +185,6 @@ body {
 }
 
 .about-section {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -216,7 +216,6 @@ body {
   padding: 0;
   margin: 12 0 0 0;
   list-style: none;
-  display: flex;
   gap: 16px;
 }
 
@@ -259,21 +258,17 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
   gap: 16px;
 }
 
 .frame-title {
   margin: 40px 0;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .skill-title {
   margin: 40px 0;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -297,8 +292,6 @@ body {
   background-size: contain;
   background-color: #6070ff;
   border-top-left-radius: 80px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 57px;
@@ -328,7 +321,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -423,6 +415,10 @@ input[type="submit"]:hover {
 
   .intro p {
     width: 800px;
+  }
+
+  .connect {
+    padding-right: 480px;
   }
 
   .works-section {
