@@ -506,3 +506,8 @@ input[type="submit"]:hover {
     color: white;
   }
 }
+
+.scale:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
