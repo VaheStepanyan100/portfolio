@@ -349,12 +349,21 @@ textarea::placeholder {
   padding-left: 16px;
 }
 
+textarea:hover::placeholder {
+  transform: translate(2px);
+}
+
 input::placeholder {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
   padding-left: 16px;
+}
+
+input[type="text"]:hover::placeholder,
+input[type="email"]:hover::placeholder {
+  transform: translate(2px);
 }
 
 input[type="submit"] {
