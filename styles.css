@@ -413,6 +413,15 @@ input[type="submit"]:hover {
   .intro {
     background-image: url("assets/Header bg.svg");
     background-size: contain;
+    padding-bottom: 132px;
+  }
+
+  .intro h1 {
+    padding-right: 500px;
+  }
+
+  .intro p {
+    width: 800px;
   }
 
   .works-section {
