@@ -489,4 +489,14 @@ input[type="submit"]:hover {
   .contact-form {
     background-image: url("assets/contact form background shapes.svg");
   }
+
+  .contact-me > p {
+    width: 569px;
+  }
+
+  .formInputItems input[type="text"],
+  .formInputItems input[type="email"],
+  .formInputItems textarea {
+    width: 447px;
+  }
 }
