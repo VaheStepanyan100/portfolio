@@ -387,6 +387,7 @@ input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    padding-bottom: 62px;
   }
 
   .menu-list-items > ul {
@@ -413,7 +414,6 @@ input[type="submit"]:hover {
   .intro {
     background-image: url("assets/Header bg.svg");
     background-size: contain;
-    padding-bottom: 132px;
   }
 
   .intro h1 {
