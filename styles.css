@@ -38,6 +38,16 @@ body {
   text-decoration: none;
 }
 
+.rotate {
+  animation: rotate 1s ease;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .menu-list-items > ul {
   display: none;
 }
@@ -364,6 +374,7 @@ input::placeholder {
 input[type="text"]:hover::placeholder,
 input[type="email"]:hover::placeholder {
   transform: translate(2px);
+  color: #b3bac5;
 }
 
 input[type="submit"] {
