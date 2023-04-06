@@ -360,7 +360,7 @@ textarea::placeholder {
 }
 
 textarea:hover::placeholder {
-  transform: translate(2px);
+  transform: translate(3px);
 }
 
 input::placeholder {
@@ -373,7 +373,7 @@ input::placeholder {
 
 input[type="text"]:hover::placeholder,
 input[type="email"]:hover::placeholder {
-  transform: translate(2px);
+  transform: translate(3px);
   color: #b3bac5;
 }
 
