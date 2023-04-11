@@ -224,7 +224,7 @@ body {
 
 .about-section .lets-connect {
   padding: 0;
-  margin: 12 0 0 0;
+  margin: 12px 0 0 0;
   list-style: none;
   gap: 16px;
 }
@@ -313,7 +313,7 @@ body {
 
 .contact-me > h2 {
   padding-top: 103px;
-  font-family: 700;
+  font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #fff;
