@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio</title>
+    <title>Portfolio Design Layout</title>
   </head>
   <body>
     <header class="header">
@@ -273,7 +273,9 @@
         <form action="https://formspree.io/f/mzbqjznk" method="post">
           <ul class="formInputItems flex-row">
             <li>
+              <label for="name" hidden>Full name</label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 placeholder="Lorem Ipsum"
@@ -282,7 +284,9 @@
               />
             </li>
             <li>
+              <label for="email" hidden>Email address</label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 placeholder="loremipsum@gmail.com"
@@ -290,7 +294,9 @@
               />
             </li>
             <li>
+              <label for="message" hidden>Message area</label>
               <textarea
+                id="message"
                 name="message"
                 placeholder="Write your message here..."
                 required
