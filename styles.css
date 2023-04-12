@@ -394,6 +394,54 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .menu-list-items > ul.active {
+    display: block;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    list-style: none;
+    margin: 0;
+    padding-top: 26px;
+    padding-left: 36px;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+  }
+
+  .menu-list-items img:hover {
+    cursor: pointer;
+  }
+
+  .intro {
+    padding-top: 96px;
+  }
+
+  .menu-list-items li {
+    padding-top: 8px;
+  }
+
+  .menu-list-items > ul > li:first-child {
+    margin-left: 86%;
+  }
+
+  .menu-list-items li > a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu-list-items a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     display: flex;
