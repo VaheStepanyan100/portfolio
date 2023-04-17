@@ -437,7 +437,7 @@ input[type="submit"]:hover {
 
   .menu-list-items a:hover {
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: white;
     text-decoration-thickness: 3px;
   }
 }
