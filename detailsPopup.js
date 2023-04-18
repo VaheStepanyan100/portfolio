@@ -88,7 +88,7 @@ projects.forEach((project) => {
   cardInfo.appendChild(languageList);
 
   languages.forEach((item) => {
-    let languageListItem = document.createElement('li');
+    const languageListItem = document.createElement('li');
     languageListItem.innerHTML = item;
     languageList.appendChild(languageListItem);
   });
@@ -100,7 +100,7 @@ projects.forEach((project) => {
 
   const worksSection = document.querySelector('.works-section');
   worksSection.appendChild(container);
-  count++;
+  count += 1;
 });
 
 const seeProject = document.querySelectorAll('.see-project');
@@ -110,10 +110,9 @@ const closeIcon = document.querySelector('.close-button');
 closeIcon.addEventListener('click', () => {
   detailPopup.classList.add('hide');
   const destruction = document.querySelectorAll(
-    '.info li, .skills li, .detail-image'
+    '.info li, .skills li, .detail-image,'
   );
-  console.log(destruction);
-  for (let i = 0; i < destruction.length; i++) {
+  for (let i = 0; i < destruction.length; i += 1) {
     destruction[i].parentNode.removeChild(destruction[i]);
   }
 });
