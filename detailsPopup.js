@@ -102,3 +102,65 @@ projects.forEach((project) => {
   worksSection.appendChild(container);
   count++;
 });
+
+const seeProject = document.querySelectorAll('.see-project');
+const detailPopup = document.querySelector('.detail-popup');
+const closeIcon = document.querySelector('.close-button');
+
+closeIcon.addEventListener('click', () => {
+  detailPopup.classList.add('hide');
+  const destruction = document.querySelectorAll(
+    '.info li, .skills li, .detail-image'
+  );
+  console.log(destruction);
+  for (let i = 0; i < destruction.length; i++) {
+    destruction[i].parentNode.removeChild(destruction[i]);
+  }
+});
+
+seeProject.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let i;
+    const workClassNumber = e.target.closest('.work');
+    if (workClassNumber.classList.contains('work-one')) {
+      i = 0;
+    } else if (workClassNumber.classList.contains('work-two')) {
+      i = 1;
+    } else if (workClassNumber.classList.contains('work-three')) {
+      i = 2;
+    } else if (workClassNumber.classList.contains('work-four')) {
+      i = 3;
+    }
+
+    languages.forEach((item) => {
+      const skills = document.querySelector('.skills');
+      const skillItem = document.createElement('li');
+      skillItem.innerHTML = item;
+      skills.appendChild(skillItem);
+    });
+
+    const detailDescription = document.querySelector('.desc');
+    detailDescription.innerHTML = projects[i].description;
+    detailPopup.prepend(detailDescription);
+
+    const detailImage = document.createElement('img');
+    detailImage.setAttribute('src', projects[i].featuredImage);
+    detailImage.classList.add('detail-image');
+    detailImage.setAttribute('alt', `Snapshot of ${projects[i].name}`);
+    detailPopup.prepend(detailImage);
+
+    skillInfoListItems.forEach((item) => {
+      const info = document.querySelector('.info');
+      const detailInfo = document.createElement('li');
+      detailInfo.innerHTML = item;
+      info.appendChild(detailInfo);
+      detailPopup.prepend(info);
+    });
+
+    const detailTitle = document.querySelector('.title');
+    detailTitle.innerHTML = projects[i].name;
+    detailPopup.prepend(detailTitle);
+
+    detailPopup.classList.remove('hide');
+  });
+});

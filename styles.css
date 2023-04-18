@@ -1,9 +1,10 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: #f7f7f9;
@@ -58,7 +59,7 @@ body {
   align-items: center;
   border-bottom-left-radius: 80px;
   background-color: #fff;
-  background-image: url("assets/header-shapes mobile.svg");
+  background-image: url('assets/header-shapes mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -296,7 +297,7 @@ body {
 }
 
 .contact-form {
-  background-image: url("assets/contact form shapes-mobile.svg");
+  background-image: url('assets/contact form shapes-mobile.svg');
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: contain;
@@ -371,13 +372,13 @@ input::placeholder {
   padding-left: 16px;
 }
 
-input[type="text"]:hover::placeholder,
-input[type="email"]:hover::placeholder {
+input[type='text']:hover::placeholder,
+input[type='email']:hover::placeholder {
   transform: translate(3px);
   color: #b3bac5;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   padding: 0;
   width: 142px;
   height: 48px;
@@ -388,7 +389,7 @@ input[type="submit"] {
   line-height: 24px;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #6070ff;
   color: #fff;
   cursor: pointer;
@@ -473,7 +474,7 @@ input[type="submit"]:hover {
   }
 
   .intro {
-    background-image: url("assets/Header bg.svg");
+    background-image: url('assets/Header bg.svg');
     background-size: contain;
   }
 
@@ -552,24 +553,24 @@ input[type="submit"]:hover {
   }
 
   .contact-form {
-    background-image: url("assets/contact form background shapes.svg");
+    background-image: url('assets/contact form background shapes.svg');
   }
 
   .contact-me > p {
     width: 569px;
   }
 
-  .formInputItems input[type="text"],
-  .formInputItems input[type="email"],
+  .formInputItems input[type='text'],
+  .formInputItems input[type='email'],
   .formInputItems textarea {
     width: 447px;
   }
 
-  .formInputItems input[type="submit"] {
+  .formInputItems input[type='submit'] {
     margin-left: 150px;
   }
 
-  .formInputItems input[type="submit"]:active {
+  .formInputItems input[type='submit']:active {
     background-color: #2230d2;
     color: white;
   }
@@ -578,4 +579,128 @@ input[type="submit"]:hover {
 .scale:hover {
   transform: scale(1.01);
   cursor: pointer;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-popup {
+  margin-top: 50px;
+  position: fixed;
+  top: 0;
+  height: 0;
+  width: 343px;
+  height: 623px;
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.close-button {
+  position: absolute;
+  cursor: pointer;
+  right: 18px;
+  top: 35px;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.info li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.info li:not(:first-child) {
+  color: #7a869a;
+}
+
+.title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.skills {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.skills li {
+  background-color: #ebebff;
+  color: #6070ff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.hr {
+  border: 1px solid #ebecf0;
+  margin: 20px 0;
+}
+
+.detail-popup button {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-right: 10px;
+  border: 1px solid #6070ff;
+  width: 135px;
+  height: 48px;
+}
+
+.detail-popup button > span {
+  color: #396df2;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .detail-popup {
+    width: 1156px;
+    height: 1163px;
+  }
+  .detail-image {
+    width: 1108px;
+    height: 386px;
+  }
+  .desc {
+    float: left;
+    width: 60%;
+  }
+  .right {
+    float: left;
+    width: 28%;
+    margin-top: 16px;
+  }
+}
+
+.hide {
+  display: none;
 }
