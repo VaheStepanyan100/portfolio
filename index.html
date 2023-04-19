@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script src="detailsPopup.js" defer></script>
     <title>Portfolio Design Layout</title>
   </head>
   <body id="portfolio">
@@ -73,116 +74,7 @@
           </ul>
         </section>
       </section>
-      <section class="works-section">
-        <article class="work flex-column">
-          <img
-            class="scale"
-            src="assets/Snapshoot Portfolio.svg"
-            alt="A snapshot of Tonic project"
-          />
-          <div class="card-info">
-            <h3>Tonic</h3>
-            <ul class="skill-info flex-row">
-              <li>CANOPY</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>Back End Dev</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>2015</li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-lang flex-row">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <button>See project</button>
-          </div>
-        </article>
-        <article class="work workHeight flex-column">
-          <img
-            class="scale"
-            src="assets/Snapshoot Portfolio-2.svg"
-            alt="A snapshot of multi-stories project"
-          />
-          <div class="card-info">
-            <h3>Multi-Post Stories</h3>
-            <ul class="skill-info flex-row">
-              <li>CANOPY</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>Back End Dev</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>2015</li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-lang flex-row">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <button>See project</button>
-          </div>
-        </article>
-        <article class="work flex-column">
-          <img
-            class="scale"
-            src="assets/Snapshoot Portfolio-3.svg"
-            alt="A snapshot of second version of tonic project"
-          />
-          <div class="card-info">
-            <h3>Tonic</h3>
-            <ul class="skill-info flex-row">
-              <li>CANOPY</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>Back End Dev</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>2015</li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-lang flex-row">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <button>See project</button>
-          </div>
-        </article>
-        <article class="work workHeight flex-column">
-          <img
-            class="scale"
-            src="assets/Snapshoot Portfolio-4.svg"
-            alt="A snapshot of second version of multi stories project"
-          />
-          <div class="card-info">
-            <h3>Multi-Post Stories</h3>
-            <ul class="skill-info flex-row">
-              <li>CANOPY</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>Back End Dev</li>
-              <li><img src="assets/Counter.png" alt="bullet" /></li>
-              <li>2015</li>
-            </ul>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="work-lang flex-row">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <button>See project</button>
-          </div>
-        </article>
-      </section>
+      <section class="works-section"></section>
 
       <section id="about" class="about-section flex-row">
         <article class="about-article">
@@ -312,5 +204,30 @@
         </form>
       </section>
     </main>
+    <div class="detail-container">
+      <div class="detail-popup hide">
+        <img
+          class="close-button"
+          src="assets/detailCloseIcon.png"
+          alt="Close button"
+        />
+        <div class="title"></div>
+
+        <ul class="info"></ul>
+        <p class="desc"></p>
+        <div class="right">
+          <ul class="skills"></ul>
+          <hr class="hr" />
+          <button>
+            <span>See live</span>
+            <img src="assets/seeLiveIcon.png" alt="See live" />
+          </button>
+          <button>
+            <span>See source</span>
+            <img width="16px" src="assets/Vector.png" alt="See source" />
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
