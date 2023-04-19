@@ -110,7 +110,7 @@ const closeIcon = document.querySelector('.close-button');
 closeIcon.addEventListener('click', () => {
   detailPopup.classList.add('hide');
   const destruction = document.querySelectorAll(
-    '.info li, .skills li, .detail-image, '
+    '.info li, .skills li, .detail-image'
   );
   for (let i = 0; i < destruction.length; i += 1) {
     destruction[i].parentNode.removeChild(destruction[i]);
