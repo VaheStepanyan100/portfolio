@@ -47,8 +47,6 @@ const skillInfoListItems = [
   '2015',
 ];
 
-const languages = ['HTML', 'CSS', 'JavaScript'];
-
 let count = 0;
 
 projects.forEach((project) => {
@@ -87,7 +85,7 @@ projects.forEach((project) => {
   languageList.classList.add('work-lang', 'flex-row');
   cardInfo.appendChild(languageList);
 
-  languages.forEach((item) => {
+  projects[0].technologies.forEach((item) => {
     const languageListItem = document.createElement('li');
     languageListItem.innerHTML = item;
     languageList.appendChild(languageListItem);
@@ -131,7 +129,7 @@ seeProject.forEach((el) => {
       i = 3;
     }
 
-    languages.forEach((item) => {
+    projects[0].technologies.forEach((item) => {
       const skills = document.querySelector('.skills');
       const skillItem = document.createElement('li');
       skillItem.innerHTML = item;
