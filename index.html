@@ -164,7 +164,7 @@
             to help with it!
           </p>
         </article>
-        <form action="https://formspree.io/f/mzbqjznk" method="post">
+        <form id="form" action="https://formspree.io/f/mzbqjznk" method="post">
           <ul class="formInputItems flex-row">
             <li>
               <label for="name" hidden>Full name</label>
@@ -197,8 +197,13 @@
                 maxlength="500"
               ></textarea>
             </li>
+            <li><div class="error-element"></div></li>
             <li>
-              <input type="submit" value="Get in touch" />
+              <input
+                id="get-in-touch-button"
+                type="submit"
+                value="Get in touch"
+              />
             </li>
           </ul>
         </form>
