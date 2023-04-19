@@ -529,7 +529,12 @@ input[type='submit']:hover {
     gap: 50px;
   }
 
-  .card-info {
+  .work-two,
+  .work-four {
+    flex-direction: row-reverse;
+  }
+
+  .work .card-info {
     align-self: flex-start;
   }
 
