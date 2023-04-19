@@ -169,10 +169,8 @@ seeProject.forEach((el) => {
     if (!detailPopup.classList.contains('hide')) {
       document.querySelector('.header').style.backgroundColor = '#C1C7D0';
       document.querySelector('.intro').style.backgroundColor = '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor =
-        '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor =
-        '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
       document.body.style.backgroundColor = '#C1C7D0';
     }
   });
