@@ -687,13 +687,15 @@ input[type='submit']:hover {
 
 @media (min-width: 768px) {
   .detail-popup {
-    width: 1156px;
-    height: 1163px;
+    width: 956px;
+    height: 626px;
+    overflow-y: scroll;
   }
 
   .detail-image {
-    width: 1108px;
-    height: 386px;
+    width: 908px;
+    height: 416px;
+    object-fit: cover;
   }
 
   .desc {
@@ -703,7 +705,7 @@ input[type='submit']:hover {
 
   .right {
     float: left;
-    width: 28%;
+    width: 40%;
     margin-top: 16px;
   }
 }
