@@ -31,7 +31,7 @@ function showError(event) {
 
 submit.addEventListener('click', showError);
 
-//Local Storage
+// Local Storage
 
 const fullNameInput = form.name;
 const messageInput = form.message;
