@@ -12,6 +12,8 @@ menuListItems.forEach((el) => {
   });
 });
 
+// Validate Form
+
 const form = document.querySelector('#form');
 const errorElement = document.querySelector('.error-element');
 const emailInput = form.elements.email;
@@ -28,3 +30,38 @@ function showError(event) {
 }
 
 submit.addEventListener('click', showError);
+
+// Local Storage
+
+const fullNameInput = form.name;
+const messageInput = form.message;
+
+const formObj = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+if (localStorage.formStorage) {
+  formObj.fullName = JSON.parse(localStorage.formStorage).fullName;
+  formObj.email = JSON.parse(localStorage.formStorage).email;
+  formObj.message = JSON.parse(localStorage.formStorage).message;
+  fullNameInput.value = formObj.fullName;
+  emailInput.value = formObj.email;
+  messageInput.value = formObj.message;
+}
+
+fullNameInput.addEventListener('input', () => {
+  formObj.fullName = fullNameInput.value;
+  localStorage.setItem('formStorage', JSON.stringify(formObj));
+});
+
+emailInput.addEventListener('input', () => {
+  formObj.email = emailInput.value;
+  localStorage.setItem('formStorage', JSON.stringify(formObj));
+});
+
+messageInput.addEventListener('input', () => {
+  formObj.message = messageInput.value;
+  localStorage.setItem('formStorage', JSON.stringify(formObj));
+});
