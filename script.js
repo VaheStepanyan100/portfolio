@@ -12,6 +12,8 @@ menuListItems.forEach((el) => {
   });
 });
 
+// Validate Form
+
 const form = document.querySelector('#form');
 const errorElement = document.querySelector('.error-element');
 const emailInput = form.elements.email;
@@ -28,6 +30,8 @@ function showError(event) {
 }
 
 submit.addEventListener('click', showError);
+
+//Local Storage
 
 const fullNameInput = form.name;
 const messageInput = form.message;
