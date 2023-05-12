@@ -109,7 +109,7 @@ const closeIcon = document.querySelector('.close-button');
 closeIcon.addEventListener('click', () => {
   detailPopup.classList.add('hide');
   const destruction = document.querySelectorAll(
-    '.info li, .skills li, .detail-image'
+    '.info li, .skills li, .detail-image',
   );
   for (let i = 0; i < destruction.length; i += 1) {
     destruction[i].parentNode.removeChild(destruction[i]);
@@ -175,10 +175,8 @@ seeProject.forEach((el) => {
     if (!detailPopup.classList.contains('hide')) {
       document.querySelector('.header').style.backgroundColor = '#C1C7D0';
       document.querySelector('.intro').style.backgroundColor = '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor =
-        '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor =
-        '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
       document.body.style.backgroundColor = '#C1C7D0';
     }
   });
