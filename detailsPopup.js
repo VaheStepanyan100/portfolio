@@ -1,12 +1,13 @@
 const projects = [
   {
-    name: 'Tonic',
+    name: 'Creative Commons Global Summit 2015',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/Snapshoot Portfolio.svg',
+      'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
+    featuredImage: 'assets/Snapshot Porfolio-1.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://hjlk.jk/dfjkls',
-    linkToSource: 'https://gfsdf.hjlhs8h',
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
+    linkToSource:
+      'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
   },
   {
     name: 'Multi-Post Stories',
@@ -152,6 +153,11 @@ seeProject.forEach((el) => {
     detailImage.classList.add('detail-image');
     detailImage.setAttribute('alt', `Snapshot of ${projects[i].name}`);
     detailPopup.prepend(detailImage);
+
+    const seeLive = document.querySelector('#see-live');
+    const seeSource = document.querySelector('#see-source');
+    seeLive.setAttribute('href', projects[i].linkToLiveVersion);
+    seeSource.setAttribute('href', projects[i].linkToSource);
 
     skillInfoListItems.forEach((item) => {
       const info = document.querySelector('.info');

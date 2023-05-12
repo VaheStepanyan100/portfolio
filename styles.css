@@ -677,12 +677,21 @@ input[type='submit']:hover {
   margin: 20px 0;
 }
 
-.detail-popup button > span {
+.detail-popup button span {
   color: #396df2;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   margin-right: 12px;
+}
+
+.detail-image {
+  width: 295px;
+  height: 220px;
+}
+
+.detail-a-tag {
+  all: unset;
 }
 
 @media (min-width: 768px) {
