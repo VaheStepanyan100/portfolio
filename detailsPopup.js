@@ -1,12 +1,13 @@
 const projects = [
   {
-    name: 'Tonic',
+    name: 'Creative Commons Global Summit 2015',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/Snapshoot Portfolio.svg',
+      'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
+    featuredImage: 'assets/Snapshot Porfolio-1.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://hjlk.jk/dfjkls',
-    linkToSource: 'https://gfsdf.hjlhs8h',
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
+    linkToSource:
+      'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
   },
   {
     name: 'Multi-Post Stories',
@@ -108,7 +109,7 @@ const closeIcon = document.querySelector('.close-button');
 closeIcon.addEventListener('click', () => {
   detailPopup.classList.add('hide');
   const destruction = document.querySelectorAll(
-    '.info li, .skills li, .detail-image',
+    '.info li, .skills li, .detail-image'
   );
   for (let i = 0; i < destruction.length; i += 1) {
     destruction[i].parentNode.removeChild(destruction[i]);
@@ -153,6 +154,11 @@ seeProject.forEach((el) => {
     detailImage.setAttribute('alt', `Snapshot of ${projects[i].name}`);
     detailPopup.prepend(detailImage);
 
+    const seeLive = document.querySelector('#see-live');
+    const seeSource = document.querySelector('#see-source');
+    seeLive.setAttribute('href', projects[i].linkToLiveVersion);
+    seeSource.setAttribute('href', projects[i].linkToSource);
+
     skillInfoListItems.forEach((item) => {
       const info = document.querySelector('.info');
       const detailInfo = document.createElement('li');
@@ -169,8 +175,10 @@ seeProject.forEach((el) => {
     if (!detailPopup.classList.contains('hide')) {
       document.querySelector('.header').style.backgroundColor = '#C1C7D0';
       document.querySelector('.intro').style.backgroundColor = '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
-      document.querySelector('.about-article').style.backgroundColor = '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor =
+        '#C1C7D0';
+      document.querySelector('.about-article').style.backgroundColor =
+        '#C1C7D0';
       document.body.style.backgroundColor = '#C1C7D0';
     }
   });
