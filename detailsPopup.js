@@ -86,7 +86,7 @@ projects.forEach((project) => {
   languageList.classList.add('work-lang', 'flex-row');
   cardInfo.appendChild(languageList);
 
-  projects[0].technologies.forEach((item) => {
+  project.technologies.forEach((item) => {
     const languageListItem = document.createElement('li');
     languageListItem.innerHTML = item;
     languageList.appendChild(languageListItem);
