@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: 'Welcome to Budget Monitor',
+    name: 'Budget<br>Monitor',
     description:
     'Start managing your finances and achieving your financial goals with ease.',
     featuredImage: 'assets/Snapshot Portfolio-1.png',
@@ -9,7 +9,7 @@ const projects = [
     linkToSource: 'https://github.com/VaheStepanyan100/budget-app',
   },
   {
-    name: 'Creative Commons Global Summit 2015',
+    name: `Creative<br>Commons<br>Global<br>Summit 2015`,
     description:
       'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
     featuredImage: 'assets/Snapshot Portfolio-2.png',
