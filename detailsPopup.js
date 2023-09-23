@@ -1,22 +1,22 @@
 const projects = [
   {
+    name: 'Welcome to Budget Monitor',
+    description:
+    'Start managing your finances and achieving your financial goals with ease.',
+    featuredImage: 'assets/Snapshot Portfolio-1.png',
+    technologies: ['RoR', 'PostgreSQL', 'Tailwind CSS'],
+    linkToLiveVersion: 'https://budget-b2sg.onrender.com/',
+    linkToSource: 'https://github.com/VaheStepanyan100/budget-app',
+  },
+  {
     name: 'Creative Commons Global Summit 2015',
     description:
       'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
-    featuredImage: 'assets/Snapshot Porfolio-1.png',
+    featuredImage: 'assets/Snapshot Portfolio-2.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
     linkToSource:
       'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
-  },
-  {
-    name: 'Multi-Post Stories',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/Snapshoot Portfolio-2.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://hjlk.jk/dfjkls',
-    linkToSource: 'https://gfsdf.hjlhs8h',
   },
   {
     name: 'Tonic',
