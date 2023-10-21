@@ -35,14 +35,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  color: #6070ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-decoration: none;
-}
-
 .rotate {
   animation: rotate 1s ease;
 }
@@ -110,6 +102,12 @@ body {
 .connect-ul > li,
 .hamburgerIcon > img {
   cursor: pointer;
+}
+
+.hamburgerIcon > img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 22px;
 }
 
 .works-section {
@@ -437,14 +435,15 @@ input[type='submit']:hover {
     bottom: 0;
     list-style: none;
     margin: 0;
-    padding-top: 26px;
-    padding-left: 36px;
+    padding-top: 56px;
+    padding-left: 56px;
     background-color: #6070ff;
     mix-blend-mode: multiply;
   }
 
   .menu-list-items img:hover {
     cursor: pointer;
+    width: 10px;
   }
 
   .intro {
@@ -480,13 +479,13 @@ input[type='submit']:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    padding-bottom: 10px;
   }
 
   .menu-list-items > ul {
     display: flex;
     list-style: none;
     gap: 24px;
+    padding-bottom: 34px;
   }
 
   .hamburgerIcon > img {
@@ -499,9 +498,7 @@ input[type='submit']:hover {
   }
 
   .menu-list-items a:hover {
-    text-decoration: underline;
-    text-decoration-color: dodgerblue;
-    text-decoration-thickness: 2px;
+    color: #6070ff;
   }
 
   .intro {
