@@ -2,14 +2,14 @@ const projects = [
   {
     name: 'Budget<br>Monitor',
     description:
-    'Start managing your finances and achieving your financial goals with ease.',
+      'Start managing your finances and achieving your financial goals with ease.',
     featuredImage: 'assets/Snapshot Portfolio-1.png',
     technologies: ['RoR', 'PostgreSQL', 'Tailwind CSS'],
     linkToLiveVersion: 'https://budget-b2sg.onrender.com/',
     linkToSource: 'https://github.com/VaheStepanyan100/budget-app',
   },
   {
-    name: `Creative<br>Commons<br>Global<br>Summit 2015`,
+    name: 'Creative<br>Commons<br>Global<br>Summit 2015',
     description:
       'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
     featuredImage: 'assets/Snapshot Portfolio-2.png',
