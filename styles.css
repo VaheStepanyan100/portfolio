@@ -730,3 +730,21 @@ input[type='submit']:hover {
   border-radius: 8px;
   padding-left: 20px;
 }
+
+.toggle-button,
+.toggle-first-button {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.rotate-opposite {
+  transform: rotate(-90deg);
+}
+
+.hidden {
+  display: none;
+}
