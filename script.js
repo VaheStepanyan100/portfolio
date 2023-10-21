@@ -65,3 +65,20 @@ messageInput.addEventListener('input', () => {
   formObj.message = messageInput.value;
   localStorage.setItem('formStorage', JSON.stringify(formObj));
 });
+
+const toggleButtons = document.querySelectorAll('.toggle-button');
+const toggleFirstButton = document.querySelector('.toggle-first-button');
+
+toggleButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const sublist = button.parentElement.nextElementSibling;
+    sublist.classList.toggle('hidden');
+    button.classList.toggle('rotated');
+  });
+});
+
+toggleFirstButton.addEventListener('click', () => {
+  const sublist = toggleFirstButton.parentElement.nextElementSibling;
+  sublist.classList.toggle('hidden');
+  toggleFirstButton.classList.toggle('rotate-opposite');
+});
