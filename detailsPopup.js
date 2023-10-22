@@ -9,19 +9,9 @@ const projects = [
     linkToSource: 'https://github.com/VaheStepanyan100/budget-app',
   },
   {
-    name: 'Creative<br>Commons<br>Global<br>Summit 2015',
-    description:
-      'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
-    featuredImage: 'assets/Snapshot Portfolio-2.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
-    linkToSource:
-      'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
-  },
-  {
     name: 'Tonic',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'assets/Snapshoot Portfolio-3.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://hjlk.jk/dfjkls',
@@ -30,11 +20,21 @@ const projects = [
   {
     name: 'Multi-Post Stories',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'assets/Snapshoot Portfolio-4.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://hjlk.jk/dfjkls',
     linkToSource: 'https://gfsdf.hjlhs8h',
+  },
+  {
+    name: 'Creative Commons<br>Global Summit 2015',
+    description:
+      'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
+    featuredImage: 'assets/Snapshot Portfolio-2.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
+    linkToSource:
+      'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
   },
 ];
 
@@ -43,7 +43,7 @@ const classNames = ['work-one', 'work-two', 'work-three', 'work-four'];
 const skillInfoListItems = [
   'CANOPY',
   '<img src="assets/Counter.png" alt="bullet" />',
-  'Back End Dev',
+  'Full Stack Dev',
   '<img src="assets/Counter.png" alt="bullet" />',
   '2015',
 ];
@@ -137,7 +137,7 @@ seeProject.forEach((el) => {
       i = 3;
     }
 
-    projects[0].technologies.forEach((item) => {
+    projects[i].technologies.forEach((item) => {
       const skills = document.querySelector('.skills');
       const skillItem = document.createElement('li');
       skillItem.innerHTML = item;
