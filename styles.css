@@ -630,6 +630,7 @@ input[type='submit']:hover {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 22px;
+  z-index: 1000;
 }
 
 .close-button {
@@ -703,9 +704,8 @@ input[type='submit']:hover {
   }
 
   .detail-image {
-    width: 908px;
-    height: 446px;
-    object-fit: cover;
+    width: 380px;
+    height: 300px;
   }
 
   .desc {
