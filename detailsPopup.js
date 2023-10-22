@@ -7,24 +7,45 @@ const projects = [
     technologies: ['RoR', 'PostgreSQL', 'Tailwind CSS'],
     linkToLiveVersion: 'https://budget-b2sg.onrender.com/',
     linkToSource: 'https://github.com/VaheStepanyan100/budget-app',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Full Stack Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2015',
+    ],
   },
   {
     name: 'Tonic',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'assets/Snapshoot Portfolio-3.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://hjlk.jk/dfjkls',
     linkToSource: 'https://gfsdf.hjlhs8h',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Full Stack Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2015',
+    ],
   },
   {
     name: 'Multi-Post Stories',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'assets/Snapshoot Portfolio-4.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://hjlk.jk/dfjkls',
     linkToSource: 'https://gfsdf.hjlhs8h',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Full Stack Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2015',
+    ],
   },
   {
     name: 'Creative Commons<br>Global Summit 2015',
@@ -35,18 +56,17 @@ const projects = [
     linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
     linkToSource:
       'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Full Stack Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2015',
+    ],
   },
 ];
 
 const classNames = ['work-one', 'work-two', 'work-three', 'work-four'];
-
-const skillInfoListItems = [
-  'CANOPY',
-  '<img src="assets/Counter.png" alt="bullet" />',
-  'Full Stack Dev',
-  '<img src="assets/Counter.png" alt="bullet" />',
-  '2015',
-];
 
 let count = 0;
 
@@ -72,7 +92,7 @@ projects.forEach((project) => {
   skillInfo.classList.add('skill-info', 'flex-row');
   cardInfo.appendChild(skillInfo);
 
-  skillInfoListItems.forEach((item) => {
+  project.items.forEach((item) => {
     const li = document.createElement('li');
     li.innerHTML = item;
     skillInfo.appendChild(li);
@@ -159,7 +179,7 @@ seeProject.forEach((el) => {
     seeLive.setAttribute('href', projects[i].linkToLiveVersion);
     seeSource.setAttribute('href', projects[i].linkToSource);
 
-    skillInfoListItems.forEach((item) => {
+    projects[i].items.forEach((item) => {
       const info = document.querySelector('.info');
       const detailInfo = document.createElement('li');
       detailInfo.innerHTML = item;
