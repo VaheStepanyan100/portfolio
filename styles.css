@@ -425,6 +425,11 @@ input[type='submit']:hover {
 }
 
 @media (max-width: 768px) {
+  .work > img {
+    width: 295px;
+    height: 220px;
+  }
+
   .menu-list-items > ul.active {
     display: block;
     position: fixed;
@@ -470,11 +475,6 @@ input[type='submit']:hover {
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-thickness: 3px;
-  }
-
-  .work > img {
-    width: 295px;
-    height: 220px;
   }
 }
 
