@@ -12,61 +12,83 @@ const projects = [
       '<img src="assets/Counter.png" alt="bullet" />',
       'Full Stack Dev',
       '<img src="assets/Counter.png" alt="bullet" />',
-      '2015',
+      '2023',
     ],
   },
   {
-    name: 'Tonic',
+    name: 'Metrics<br>Web App',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/Snapshoot Portfolio-3.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://hjlk.jk/dfjkls',
-    linkToSource: 'https://gfsdf.hjlhs8h',
-    items: [
-      'CANOPY',
-      '<img src="assets/Counter.png" alt="bullet" />',
-      'Full Stack Dev',
-      '<img src="assets/Counter.png" alt="bullet" />',
-      '2015',
-    ],
-  },
-  {
-    name: 'Multi-Post Stories',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/Snapshoot Portfolio-4.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://hjlk.jk/dfjkls',
-    linkToSource: 'https://gfsdf.hjlhs8h',
-    items: [
-      'CANOPY',
-      '<img src="assets/Counter.png" alt="bullet" />',
-      'Full Stack Dev',
-      '<img src="assets/Counter.png" alt="bullet" />',
-      '2015',
-    ],
-  },
-  {
-    name: 'Creative Commons<br>Global Summit 2015',
-    description:
-      'A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.',
+      'Metrics web application aimed at tracking and analyzing data. It provides users with a user-friendly interface to view and manage data.',
     featuredImage: 'assets/Snapshot Portfolio-2.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLiveVersion: 'https://vahestepanyan100.github.io/capstone-project-1/',
-    linkToSource:
-      'https://github.com/VaheStepanyan100/capstone-project-1/tree/capstone',
+    technologies: ['React', 'Redux', 'Styled Component'],
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/metrics-webapp/',
+    linkToSource: 'https://github.com/VaheStepanyan100/metrics-webapp',
     items: [
       'CANOPY',
       '<img src="assets/Counter.png" alt="bullet" />',
-      'Full Stack Dev',
+      'Front-End Dev',
       '<img src="assets/Counter.png" alt="bullet" />',
-      '2015',
+      '2023',
+    ],
+  },
+  {
+    name: 'Bookstore',
+    description:
+      'Bookstore project provides a practical and engaging platform for individuals looking to expand their knowledge and skills in React and Redux while developing a fully functional web application for managing book-related information.',
+    featuredImage: 'assets/Snapshot Portfolio-3.png',
+    technologies: ['React', 'Redux', 'Styled Component'],
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/bookstore/',
+    linkToSource: 'https://github.com/VaheStepanyan100/bookstore',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Front-End Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2023',
+    ],
+  },
+  {
+    name: 'Space<br>Travelers Hub',
+    description:
+      'Real live data from the SpaceX API. Web application for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.',
+    featuredImage: 'assets/Snapshot Portfolio-4.png',
+    technologies: ['React', 'Redux', 'Styled Component'],
+    linkToLiveVersion:
+      'https://vahestepanyan100.github.io/space-travelers-hub/',
+    linkToSource: 'https://github.com/VaheStepanyan100/space-travelers-hub',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Front-End Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2023',
+    ],
+  },
+  {
+    name: 'Space<br>Travelers Hub',
+    description:
+      'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote.',
+    featuredImage: 'assets/Snapshot Portfolio-5.png',
+    technologies: ['React', 'CSS'],
+    linkToLiveVersion: 'https://vahestepanyan100.github.io/math-magicians/',
+    linkToSource: 'https://github.com/VaheStepanyan100/math-magicians',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Front-End Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2023',
     ],
   },
 ];
 
-const classNames = ['work-one', 'work-two', 'work-three', 'work-four'];
+const classNames = [
+  'work-one',
+  'work-two',
+  'work-three',
+  'work-four',
+  'work-five',
+];
 
 let count = 0;
 
@@ -99,7 +121,7 @@ projects.forEach((project) => {
   });
 
   const cardDescription = document.createElement('p');
-  cardDescription.innerHTML = project.description;
+  cardDescription.innerText = project.description;
   cardInfo.appendChild(cardDescription);
 
   const languageList = document.createElement('ul');
@@ -108,13 +130,13 @@ projects.forEach((project) => {
 
   project.technologies.forEach((item) => {
     const languageListItem = document.createElement('li');
-    languageListItem.innerHTML = item;
+    languageListItem.innerText = item;
     languageList.appendChild(languageListItem);
   });
 
   const seeProjectButton = document.createElement('button');
   seeProjectButton.classList.add('see-project');
-  seeProjectButton.innerHTML = 'See project';
+  seeProjectButton.innerText = 'See project';
   cardInfo.appendChild(seeProjectButton);
 
   const worksSection = document.querySelector('.works-section');
@@ -155,6 +177,8 @@ seeProject.forEach((el) => {
       i = 2;
     } else if (workClassNumber.classList.contains('work-four')) {
       i = 3;
+    } else if (workClassNumber.classList.contains('work-five')) {
+      i = 4;
     }
 
     projects[i].technologies.forEach((item) => {
