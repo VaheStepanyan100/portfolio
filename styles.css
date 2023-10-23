@@ -51,6 +51,7 @@ body {
 
 .intro {
   padding: 100px 0;
+  margin-right: -16px;
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 80px;
@@ -116,6 +117,7 @@ body {
   align-items: center;
   gap: 88px;
   margin-top: 114px;
+  margin-right: -16px;
 }
 
 .detail-popup button {
@@ -227,6 +229,7 @@ body {
 .about-section {
   justify-content: center;
   align-items: center;
+  margin-right: -16px;
 }
 
 .about-section article {
@@ -335,6 +338,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 57px;
+  margin-right: -16px;
 }
 
 .contact-me {
