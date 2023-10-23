@@ -531,7 +531,8 @@ input[type='submit']:hover {
   }
 
   .work-two,
-  .work-four {
+  .work-four,
+  .work-six {
     flex-direction: row-reverse;
   }
 
