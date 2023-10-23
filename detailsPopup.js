@@ -80,6 +80,23 @@ const projects = [
       '2023',
     ],
   },
+  {
+    name: 'FilmFicks',
+    description:
+      'This JavaScript project is about building your web application based on an external API.',
+    featuredImage: 'assets/Snapshot Portfolio-6.png',
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
+    linkToLiveVersion:
+      'https://vahestepanyan100.github.io/javascript-capstone/dist/',
+    linkToSource: 'https://github.com/VaheStepanyan100/javascript-capstone',
+    items: [
+      'CANOPY',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      'Front-End Dev',
+      '<img src="assets/Counter.png" alt="bullet" />',
+      '2023',
+    ],
+  },
 ];
 
 const classNames = [
@@ -88,6 +105,7 @@ const classNames = [
   'work-three',
   'work-four',
   'work-five',
+  'work-six',
 ];
 
 let count = 0;
@@ -179,6 +197,8 @@ seeProject.forEach((el) => {
       i = 3;
     } else if (workClassNumber.classList.contains('work-five')) {
       i = 4;
+    } else if (workClassNumber.classList.contains('work-six')) {
+      i = 5;
     }
 
     projects[i].technologies.forEach((item) => {
