@@ -471,6 +471,11 @@ input[type='submit']:hover {
     text-decoration-color: white;
     text-decoration-thickness: 3px;
   }
+
+  .work > img {
+    width: 295px;
+    height: 220px;
+  }
 }
 
 @media (min-width: 768px) {
