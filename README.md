@@ -2,7 +2,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Portfolio-Mobile-First\] ](#-portfolio-mobile-first-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -50,7 +50,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://VaheStepanyan100.github.io/portfolio/](https://VaheStepanyan100.github.io/Portfolio-mobile-first/)
+- [https://VaheStepanyan100.github.io/portfolio/](https://VaheStepanyan100.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
